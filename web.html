@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Management System</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icon/nm.png" type="image/x-icon" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--animate style-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body id="home">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-danger py-3 animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/icon/nm.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded">
+                <span class="fw-bold text-white">Con-Fight</span>
+            </a>
+          <button class="navbar-toggler bg-white shadow-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+              <li class="nav-item">
+                <a class="nav-link text-white btn btn-danger" type="button" href="index.html#home">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white btn btn-danger" type="button" href="index.html#about">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white btn btn-danger" type="button" href="index.html#reason">Tujuan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white btn btn-danger" type="button" href="index.html#learning">Materi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white btn btn-danger" type="button" href="index.html#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white btn btn-danger" type="button" href="index.html#contact">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--Navbar-->
+
+    <!--exercise-->
+    <section class="section web">
+        <div class="container">
+            <div class="materi">
+                <h1 class="fw-bold mb-3 text-center pt-5" data-aos="fade-up" data-aos-duration="1000">WEB SERVER MENGGUNAKAN APACHE</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            Konsep Web Server
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Bagian ini bertujuan sebagai penguatan dalam memahami konsep Web Server khususnya Apache. Seperti yang kita tahu, Apache merupakan salah satu jenis Web Server yang mudah dikonfigurasi dan memiliki banyak fitur yang bermanfaat. Yuk simak materi di bawah ini!
+                            </div>
+                            <div class="image text-center">
+                                <img src="./assets/images/projek1.webp" class="img-fluid rounded" alt="...">
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="ture" aria-controls="collapseTwo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            Guided Exercise
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Silahkan mengerjakan latihan berikut dengan panduan yang ada!
+                            </div>
+                            <div class="explain pt-2">
+                                <div class="header p-1 bg-danger bg-opacity-10 border border-danger border-start-0 rounded-end">
+                                    <p>Pada latihan ini anda akan mengonfigurasi Web Server Apache!</p>
+                                    <h4 class="fw-bold">OUTPUT</h4>
+                                    <p>Membuat Apache sukses menampilkan website secara lokal</p>
+                                    <h4 class="fw-bold">Prepare the Lab</h4>
+                                    <p class="lh-lg">Sebelum anda memulai lab, anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p>Jika sudah, anda bisa memulai lab dengan mengetikan perintah</p>
+                                    <p class="bg-danger-subtle"><code class="text-dark">lab start apache</code></p>
+                                </div>
+                                <div class="instructions pt-2">
+                                    <h5 class="fw-bold">Instructions</h5>
+                                    <p>1. Masuk ke dalam mode <strong>root</strong></p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">user@server:~$ sudo su <br>
+                                        [sudo] password for user:</code>
+                                    </p>
+                                    <p class="pt-2">2. Install paket Apache</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# apt-get install apache2 -y</code>
+                                    </p>
+                                    <p class="pt-2">3. Hidupkan paket apache yang sudah terinstall. (Pada dasarnya apache langsung aktif ketika diinstall) </p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# systemctl enable apache2</code>
+                                    </p>
+                                    <p class="pt-2">4. Buat direktori baru dalam /var/www/html untuk menyimpan file html custom.</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# mkdir /var/www/html/web-me</code>
+                                    </p>
+                                    <p class="pt-2">5. Buat file html baru di dalam direktori yang sudah dibuat yakni /var/www/html/web-me/.</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# touch /var/www/html/web-me/index.html</code>
+                                    </p>
+                                    <p class="pt-2">6. Isi file tersebut dengan <strong><h1\>Selamat datang di website</.h1></strong></p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# echo "&lt;h1&gt;Selamat datang di website&lt;/h1&gt;" > /var/www/html/web-me</code>
+                                    </p>
+                                    <p class="pt-2">7. Pindah ke dalam direktori konfigurasi apache yang didalamnya terdapat file virtualhost</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# cd /etc/apache2/sites-available</code>
+                                    </p>
+                                    <p class="pt-2">8. Buat file virtualhost baru pada direktori tersebut yang diberi nama <strong>web-me.conf</strong>. Masuk ke dalam file tersebut dengan perintah <strong>nano web-me.conf</strong></p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">
+                                            &lt;VirtualHost *:80> <br>
+                                            <span class="px-5">ServerName webme.com</span> <br>
+                                            <span class="px-5">ServerAdmin sija@localhost</span> <br>
+                                            <span class="px-5">DocumentRoot /var/www/html/web-me</span> <br> <br>
+                    
+                                            <span class="px-5">&lt;Directory /var/www/html/web-me&gt;</span> <br>
+                                            <span class="px-5"></span>Options Indexes FollowSymLinks <br>
+                                            <span class="px-5"></span>Require all granted <br>        
+                                            <span class="px-5"></span>AllowOverride None <br>
+                                            <span class="px-5">&lt;/Directory></span> <br>
+                                            &lt;/VirtualHost></code>
+                                    </p>
+                                    <p class="pt-2">9. Kita bisa menghidupkan hasil dari file virtualhost yang sudah kita buat dengan perintah</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# a2ensite web-me.conf</code>
+                                    </p>
+                                    <p class="pt-2">10. Matikan file virtualhost default yang ada pada direktori sites-enabled</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# a2dissite 000-default.conf</code>
+                                    </p>
+                                    <p class="pt-2">11. Restart paket apache</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# systemctl restart apache2</code>
+                                    </p>
+                                </div>
+                                <div class="evaluation pt-2">
+                                    <h5 class="fw-bold">Evaluation</h5>
+                                    <p class="pt-2">Jika konfigurasi sudah selesai dilakukan, silahkan cek hasil pengerjaan dengan perintah di bawah ini. Jika dirasa belum cukup, anda dapat melanjutkan pengerjaan sampai hasilnya sudah benar</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# lab grade apache</code>
+                                    </p>    
+                                </div>
+                                <div class="finish pt-2">
+                                    <h5 class="fw-bold">Finish</h5>
+                                    <p class="pt-2">Lakukan perintah berikut untuk menyelesaikan proses praktikum. Gunakan user <strong>root</strong> untuk melakukan perintah.</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# lab finish apache</code>
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                            Lab
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Kerjakan latihan berikut untuk menyelesaikan permasalahan Apache.
+                            </div>
+                            <div class="explain pt-2">
+                                <div class="header p-1 bg-danger bg-opacity-10 border border-danger border-start-0 rounded-end">
+                                    <p class="fw-bold">Solve The Apache!</p>
+                                    <p>Pada latihan ini anda tidak akan diberikan panduan khusus, jadi selesaikan masalah yang ada pada Apache.</p>
+                                    <h4 class="fw-bold">OUTPUT</h4>
+                                    <p>Terdapat 5 permasalahan pada Apache, anda harus menyelesaikannya dan memastikan Apache dapat menampilkan hasilnya.</p>
+                                    <h4 class="fw-bold">Prepare the Lab</h4>
+                                    <p class="lh-lg">Sebelum anda memulai lab, anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p>Jika sudah, anda bisa memulai lab dengan mengetikan perintah</p>
+                                    <p class="bg-danger-subtle"><code class="text-dark">lab start solveApache</code></p>
+                                </div>
+                                <div class="instructions pt-2">
+                                    <h5 class="fw-bold pb-3 pt-2">Clue</h5>
+                                    <p>1. Masuk ke dalam mode <strong>root</strong></p>
+                                    <p class="pt-2">2. Terdapat file index.html di dalam direktori <strong>/var/www/html/lab</strong> </p>
+                                    <p class="pt-2">3. Terdapat file VirtualHost dengan nama <strong>lab.conf</strong></p>
+                                    <p class="pt-2">4. Terdapat domain dengan nama <strong>lab.com</strong></p>
+                                    <p class="pt-2">5. File VirtualHost tersebut harus aktif dan sudah sesuai isinya seperti, server name, document root, hak akses, dan lain-lain.</p>
+                                    <p class="pt-2">6. Pastikan port listen sudah sesuai dengan yang ada pada file VirtualHost</p>
+                                <div class="evaluation pt-2">
+                                    <h5 class="fw-bold">Evaluation</h5>
+                                    <p class="pt-2">Jika konfigurasi sudah selesai dilakukan, silahkan cek hasil pengerjaan dengan perintah di bawah ini. Jika dirasa belum cukup, anda dapat melanjutkan pengerjaan sampai hasilnya sudah benar</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# lab grade solveApache</code>
+                                    </p>    
+                                </div>
+                                <div class="finish pt-2">
+                                    <h5 class="fw-bold">Finish</h5>
+                                    <p class="pt-2">Lakukan perintah berikut untuk menyelesaikan proses praktikum. Gunakan user <strong>root</strong> untuk melakukan perintah.</p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">root@server:~# lab finish solveApache</code>
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--exercise-->
+    
+    <!--footer-->
+    <section class="footer bg-danger" id="contact">
+        <div class="container">
+            <div class="footer-box">
+                <div class="row justify-content-between row-gap-4">
+                    <div class="col col-md-4 col-12 text-white">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./assets/icon/nm.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded">
+                            <h2 class="fw-bold text-white">Con-Fight</h2>
+                        </div>
+                        <p class="lh-lg opacity-75 m-0">Con-Fight adalah platform pembelajaran daring (Learning Management System) yang dirancang untuk membantu siswa menguasai materi melalui latihan, tantangan, dan ulasan materi yang terstruktur. Kami percaya bahwa proses belajar akan lebih efektif jika dibarengi dengan semangat kompetisi dan keterlibatan aktif.</p>
+                    </div>
+                    <div class="col col-md-2 col-12 d-flex flex-column text-white gap-2">
+                        <h4 class="fw-bold">Menu</h4>
+                        <a href="index.html#home" class="text-white text-decoration-none">Beranda</a>
+                        <a href="index.html#about" class="text-white text-decoration-none">Tentang Kami</a>
+                        <a href="index.html#reason" class="text-white text-decoration-none">Tujuan</a>
+                        <a href="index.html#learning" class="text-white text-decoration-none">Materi</a>
+                        <a href="index.html#faq" class="text-white text-decoration-none">FAQ</a>
+                        <a href="index.html#contact" class="text-white text-decoration-none">Contact</a>
+                    </div>
+                    <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
+                        <h4 class="fw-bold">Contact Us</h4>
+                        <p class="d-flex m-0 gap-2 align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:fadhlu@upi.edu" class="text-decoration-none text-reset">fadhlu@upi.edu</a>
+                        </p>
+                        <p class="d-flex m-0 gap-2 align-items-center">
+                            <i class="fa-solid fa-home"></i>
+                            <a href="http://wa.me/6281290415495" class="text-decoration-none text-reset">(+62) 812-9041-5495</a>
+                        </p>
+                        <p class=" lh-lg m-0 gap-2 align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Jl. Geger Arum I, Gegerkalong Girang, Kel. Isola, Kec. Sukasari, Bandung, 40154
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center text-white">
+                <p class="lh-lg opacity-75">&copy; Copyright by <span class="fw-bold">Nanang</span> 2025, All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

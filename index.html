@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Management System</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icon/nm.png" type="image/x-icon" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--animate style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  </head>
+
+  <body id="home">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-danger py-3 animate__animated animate__fadeInDown">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/icon/nm.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded" />
+          <span class="fw-bold text-white">Con-Fight</span>
+        </a>
+        <button class="navbar-toggler bg-white shadow-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbaritem collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-danger" type="button" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-danger" type="button" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-danger" type="button" href="#reason">Tujuan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-danger" type="button" href="#learning">Materi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-danger" type="button" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-danger" type="button" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar-->
+
+    <!--Hero-->
+    <section id="home" class="hero overflow-hidden">
+      <div class="container">
+        <div class="hero-box d-flex align-items-center justify-content-between flex-md-row flex-column gap-md-0 gap-5">
+          <div class="box animate__animated animate__fadeInLeft animate__delay-1s">
+            <h1 class="fw-bold mb-3">
+              Belajar Konfigurasi <br />
+              Bersama <span class="text-danger">Con-Fight</span> <br />
+              2025
+            </h1>
+            <p class="lh-lg mb-4">
+              <strong>Con-Fight</strong> adalah platform pembelajaran daring (Learning Management System) yang dirancang untuk membantu siswa menguasai materi melalui latihan, tantangan, dan ulasan materi yang terstruktur. Kami percaya
+              bahwa proses belajar akan lebih efektif jika dibarengi dengan semangat kompetisi dan keterlibatan aktif.
+            </p>
+            <div>
+              <a href="#about" class="btn btn-danger">Tentang Kami</a>
+              <a href="#learning" class="btn btn-outline-danger">Materi</a>
+            </div>
+          </div>
+          <div class="box animate__animated animate__fadeInRight animate__delay-1s">
+            <img src="./assets/images/hero.svg" alt="Hero Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Hero-->
+
+    <!--About-->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Tentang Kami</h1>
+          <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Tim di balik <strong>Con-Fight</strong> terdiri dari pendidik, pengembang, dan kreator konten yang berkomitmen menghadirkan pengalaman belajar digital yang menyenangkan, inklusif, dan efektif. Kami percaya bahwa teknologi harus
+            memperkuat proses belajar, bukan menggantikannya. Dengan Con-Fight, kami ingin menciptakan ruang belajar modern yang mendukung siswa berkembang sesuai kecepatan dan gaya mereka masing-masing.
+          </p>
+          <img src="./assets/images/about.svg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" alt="About Image" />
+        </div>
+      </div>
+    </section>
+    <!--About-->
+
+    <!--Service-->
+    <section class="service" id="reason">
+      <div class="container">
+        <div class="service-box">
+          <h1 class="fw-bold mb-3 text-center" data-aos="fade-up" data-aos-duration="1000">Tujuan</h1>
+          <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Terdapat 3 tujuan pembelajaran yang akan dicapai yakni:</p>
+
+          <div class="row justify-content-center row-gap-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <!-- Flip Card 1 -->
+            <div class="col col-md-3 col-12 p-1">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front bg-danger text-white p-4 rounded-4 shadow">
+                    <i class="fa-solid fa-user-tie mb-3 fs-2"></i>
+                    <h4 class="fw-bold mb-3">Memahami Konsep Web-Server & DNS Server</h4>
+                  </div>
+                  <div class="flip-card-back bg-light p-4 rounded-4 shadow">
+                    <p class="text-dark">Peserta didik mampu memahami konsep dan fungsi dari layanan Web Server dan DNS Server beserta perintah dasar yang digunakan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 2 -->
+            <div class="col col-md-3 col-12 p-1">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front bg-danger text-white p-4 rounded-4 shadow">
+                    <i class="fa-solid fa-folder-tree mb-3 fs-2"></i>
+                    <h4 class="fw-bold mb-3">Memahami Konfigurasi Web Server & DNS Server</h4>
+                  </div>
+                  <div class="flip-card-back bg-light p-4 rounded-4 shadow">
+                    <p class="text-dark">Peserta didik mampu memahami proses konfigurasi dari layanan Web Server dan DNS Server serta mengintegrasikan keduanya.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 3 -->
+            <div class="col col-md-3 col-12 p-1">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front bg-danger text-white p-4 rounded-4 shadow">
+                    <i class="fa-solid fa-magnifying-glass-chart mb-3 fs-2"></i>
+                    <h4 class="fw-bold mb-3">Mampu Menganalisis & Memecahkan Masalah Keduanya</h4>
+                  </div>
+                  <div class="flip-card-back bg-light p-4 rounded-4 shadow">
+                    <p class="text-dark">Peserta didik mampu menganalisis dan memecahkan permasalahan dari Web Server dan DNS Server serta menemukan solusinya.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Service-->
+
+    <!--CP-->
+    <section class="cp">
+      <div class="container">
+        <div class="cp-box text-center">
+          <h1 class="fw-bold mb-3" data-aos="fade-up" data-aos-duration="1000">Capaian Pembelajaran</h1>
+          <p data-aos="fade-up lh-lg mb-5" data-aos-duration="1000" data-aos-delay="300">
+            Peserta didik dapat memahami konsep, menerapkan, mendokumentasikan, mengomunikasikan, serta memecahkan masalah secara prosedural terkait layanan dan konfigurasi Web Server, Database Server, DNS Server, Mail Server, Directory
+            Server, teknologi kontainer, menerapkan manajemen platform (backup dan recovery).
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--CP-->
+
+    <!--Projects-->
+    <section class="projects overflow-hidden" id="learning">
+      <div class="container px-4">
+        <div class="projects-box">
+          <h1 class="fw-bold mb-3 text-center" data-aos="fade-up" data-aos-duration="1000">Materi</h1>
+          <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Silahkan pilih materi yang ingin dipelajari!</p>
+          <div class="row justify-content-center pt-4 gap-4">
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/projek1.webp" alt="Project Image" width="100%" />
+              <h4 class="pt-4">DNS Server</h4>
+              <p>Bagian ini berisi materi dari DNS Server, langkah-langkah konfigurasi beserta simulasinya, dan latihan memecahkan masalah.</p>
+              <div>
+                <a href="dns.html" class="btn btn-dark">Mulai!</a>
+              </div>
+            </div>
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/projek1.webp" alt="Project Image" width="100%" />
+              <h4 class="pt-4">Web Server</h4>
+              <p>Bagian ini berisi materi dari Web Server, langkah-langkah konfigurasi beserta simulasinya, dan latihan memecahkan masalah.</p>
+              <div>
+                <a href="web.html" class="btn btn-dark">Mulai!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Projects-->
+
+    <!--FAQ-->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-box">
+          <h1 class="fw-bold mb-3 text-center" data-aos="fade-up" data-aos-duration="1000">FAQ</h1>
+          <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Untuk membantumu memahami lebih dalam tentang platform Con-Fight, kami telah mengumpulkan beberapa pertanyaan yang sering ditanyakan oleh pengguna. Jika kamu tidak menemukan jawaban yang kamu cari, jangan ragu untuk menghubungi
+            tim kami melalui halaman Contact Us.
+          </p>
+
+          <div class="accordion pt-4" id="accordionExample">
+            <div class="row row-cols-md-2 row-cols-1 g-4">
+              <div class="col">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Bagaimana saya mengakses VM untuk melakukan praktikum?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Untuk mengakses <strong>Virtual Machine (VM)</strong>, silahkan anda meminta akses kepada guru anda dan langsung mengerjakan praktikum yang diberikan. Contoh akses yang akan diberikan ialah
+                      <code>ssh -p [port] user@10.10.10.10</code>. Jika ada kendala, jangan ragu untuk bertanya ke guru anda!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Bagaimana untuk memulai praktikum dan cara mengakhirinya?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Berikut perintah yang anda bisa gunakan ketika praktikum: <br />
+                      <code>lab start [namaExercise]</code> digunakan untuk memulai praktikum dan mengisolasi prosesnya <br />
+                      <code>lab grade [namaExercise]</code> digunakan untuk menilai hasil pengerjaan praktikum, anda bisa melakukan pengulangan konfigurasi sampai memenuhi nilai <br />
+                      <code>lab finish [namaExercise]</code> digunakan untuk mengunci hasil nilai dan mengirimkannya ke guru anda
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Materi apa saja yang tersedia di Con-Fight?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Saat ini, materi mencakup: <br />
+                      -Pengenalan Web Server & DNS Server <br />
+                      -Konfigurasi dasar dan lanjutan <br />
+                      -Latihan interaktif & simulasi troubleshooting
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      Apa yang bisa diberikan Con-Fight?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>Anda tidak perlu menginstall VM!</strong> Anda hanya perlu mengaksesnya secara remote. Bisa melalui CMD, PUTTY, atau Aplikasi lainnya yang mendukung protocol SSH.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FAQ-->
+
+    <!--footer-->
+    <section class="footer bg-danger" id="contact">
+      <div class="container">
+        <div class="footer-box">
+          <div class="row justify-content-between row-gap-4">
+            <div class="col col-md-4 col-12 text-white">
+              <div class="d-flex align-items-center gap-2">
+                <img src="./assets/icon/nm.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rounded" />
+                <h2 class="fw-bold text-white">Con-Fight</h2>
+              </div>
+              <p class="lh-lg opacity-75 m-0">
+                Con-Fight adalah platform pembelajaran daring (Learning Management System) yang dirancang untuk membantu siswa menguasai materi melalui latihan, tantangan, dan ulasan materi yang terstruktur. Kami percaya bahwa proses
+                belajar akan lebih efektif jika dibarengi dengan semangat kompetisi dan keterlibatan aktif.
+              </p>
+            </div>
+            <div class="col col-md-2 col-12 d-flex flex-column text-white gap-2">
+              <h4 class="fw-bold">Menu</h4>
+              <a href="#home" class="text-white text-decoration-none">Beranda</a>
+              <a href="#about" class="text-white text-decoration-none">Tentang Kami</a>
+              <a href="#reason" class="text-white text-decoration-none">Tujuan</a>
+              <a href="#learning" class="text-white text-decoration-none">Materi</a>
+              <a href="#faq" class="text-white text-decoration-none">FAQ</a>
+              <a href="#contact" class="text-white text-decoration-none">Contact</a>
+            </div>
+            <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
+              <h4 class="fw-bold">Contact Us</h4>
+              <p class="d-flex m-0 gap-2 align-items-center">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:fadhlu@upi.edu" class="text-decoration-none text-reset">fadhlu@upi.edu</a>
+              </p>
+              <p class="d-flex m-0 gap-2 align-items-center">
+                <i class="fa-solid fa-home"></i>
+                <a href="http://wa.me/6281290415495" class="text-decoration-none text-reset">(+62) 812-9041-5495</a>
+              </p>
+              <p class="lh-lg m-0 gap-2 align-items-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Jl. Geger Arum I, Gegerkalong Girang, Kel. Isola, Kec. Sukasari, Bandung, 40154
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center text-white">
+          <p class="lh-lg opacity-75">&copy; Copyright by <span class="fw-bold">Nanang</span> 2025, All Rights Reserved</p>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
