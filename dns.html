@@ -119,33 +119,29 @@
                                     <p>Membuat DNS Server sukses mentranslasikan IP ke domain sesuai dengan ketentuan yang ada</p>
                                     <h4 class="fw-bold">Prepare the Lab</h4>
                                     <p class="lh-lg">Sebelum anda memulai lab, anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p>Pertama masuk ke dalam mode <strong>root</strong></p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">user@server:~$ sudo su <br>
+                                        [sudo] password for user:</code>
+                                    </p>
                                     <p>Jika sudah, anda bisa memulai lab dengan mengetikan perintah</p>
                                     <p class="bg-danger-subtle"><code class="text-dark">lab start dns</code></p>
                                 </div>
                                 <div class="instructions pt-2">
                                     <h5 class="fw-bold">Instructions</h5>
-                                    <p>1. Masuk ke dalam mode <strong>root</strong></p>
+                                    <p class="pt-2">1. Install paket DNS</p>
                                     <p class="bg-danger-subtle">
-                                        <code class="text-dark">user@server:~$ sudo su <br>
-                                        [sudo] password for user:</code>
+                                        <code class="text-dark">root@server:~# apt-get install bind9 dnsutils -y</code>
                                     </p>
-                                    <p class="pt-2">2. Install paket DNS</p>
-                                    <p class="bg-danger-subtle">
-                                        <code class="text-dark">root@server:~# apt-get install bind9 dns-utils -y</code>
-                                    </p>
-                                    <p class="pt-2">3. Hidupkan paket DNS yang sudah terinstall. (Pada dasarnya DNS langsung aktif ketika diinstall) </p>
-                                    <p class="bg-danger-subtle">
-                                        <code class="text-dark">root@server:~# systemctl enable bind9</code>
-                                    </p>
-                                    <p class="pt-2">4. Masuk ke dalam direktori bind.</p>
+                                    <p class="pt-2">2. Masuk ke dalam direktori bind.</p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">root@server:~# cd /etc/bind</code>
                                     </p>
-                                    <p class="pt-2">5. Copy file forward dan reverse zone untuk membuat file baru.</p>
+                                    <p class="pt-2">3. Copy file forward dan reverse zone untuk membuat file baru.</p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">root@server:~# cp db.local db.exercise | cp db.127 db.reverse.exercise</code>
                                     </p>
-                                    <p class="pt-2">6. Isi file zone utama dengan perintah <code>nano named.conf.local</code></p>
+                                    <p class="pt-2">4. Isi file zone utama dengan perintah <code>nano named.conf.local</code></p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">
                                             zone "webme.com" { <br>
@@ -158,7 +154,7 @@
                                             }; <br>
                                         </code>
                                     </p>
-                                    <p class="pt-2">7. Tambahkan baris untuk memasukkan IP agar dapat mentranslasikan subdomain www.webme.com pada file forward zone yang baru. Ketik dengan perintah <code>nano db.exercise</code></p>
+                                    <p class="pt-2">5. Tambahkan baris untuk memasukkan IP agar dapat mentranslasikan subdomain www.webme.com pada file forward zone yang baru. Ketik dengan perintah <code>nano db.exercise</code></p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">
                                             ..... <br>
@@ -167,16 +163,16 @@
                                             .....
                                         </code>
                                     </p>
-                                    <p class="pt-2">8. Tambahkan baris untuk memasukkan subdomain www.webme.com agar dapat mentranslasikan IP pada file reverse zone yang baru. Ketik dengan perintah <code>nano db.reverse.exercise</code></p>
+                                    <p class="pt-2">6. Tambahkan baris untuk memasukkan subdomain www.webme.com agar dapat mentranslasikan IP pada file reverse zone yang baru. Ketik dengan perintah <code>nano db.reverse.exercise</code></p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">
                                             ..... <br>
-                                            15      IN      PTR     webme.com. <br>
-                                            15      IN      PTR     www.webme.com. <br>
+                                            last_octet      IN      PTR     webme.com. <br>
+                                            last_octet      IN      PTR     www.webme.com. <br>
                                             .....
                                         </code>
                                     </p>
-                                    <p class="pt-2">9. Tambahkan nameserver dengan IP yang ada di adapter kedua dan domain yang sudah ada pada file resolv.conf agar DNS Client mengetahui DNS Server. Ketik dengan perintah <code>nano /etc/resolv.conf</code></p>
+                                    <p class="pt-2">7. Tambahkan nameserver dengan IP yang ada di adapter kedua dan domain yang sudah ada pada file resolv.conf agar DNS Client mengetahui DNS Server. Ketik dengan perintah <code>nano /etc/resolv.conf</code></p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">
                                             ..... <br>
@@ -185,11 +181,11 @@
                                             .....
                                         </code>
                                     </p>
-                                    <p class="pt-2">10. Restart paket bind9</p>
+                                    <p class="pt-2">8. Restart paket bind9</p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">root@server:~# systemctl restart bind9</code>
                                     </p>
-                                    <p class="pt-2">11. Lakukan pengecekkan dengan perintah berikut</p>
+                                    <p class="pt-2">9. Lakukan pengecekkan dengan perintah berikut</p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">
                                             root@server:~# nslookup webme.com <br>
