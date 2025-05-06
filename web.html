@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Learning Management System</title>
+    <title>Con-Fight</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/icon/nm.png" type="image/x-icon" />
@@ -70,8 +70,25 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            📢Pre-Test
+                        </button>
+                        </h2>
+                        <div id="collapseZero" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sebelum memulai pembelajaran, penting untuk mengukur sejauh mana pemahaman anda mengenai konsep dari DNS Server & Web Server. Pertanyaan berikut akan mengukur sejauh mana kesiapan anda dalam pembelajaran nanti. Pre-Test berikut tidak akan mempengaruhi nilai, namun akan membantu dalam topik mana yang harus dipelajari lebih dalam!
+                            </div>
+                            <div class="p-3">
+                                <a href="" class="btn btn-outline-danger _blank">Link Pre-Test</a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            Konsep Web Server
+                            📖Konsep Web Server
                         </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
@@ -88,7 +105,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="ture" aria-controls="collapseTwo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                            Guided Exercise
+                            💻Guided Exercise
                         </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
@@ -101,7 +118,7 @@
                                     <h4 class="fw-bold">OUTPUT</h4>
                                     <p>Membuat Apache sukses menampilkan website secara lokal</p>
                                     <h4 class="fw-bold">Prepare the Lab</h4>
-                                    <p class="lh-lg">Sebelum anda memulai lab, anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p class="lh-lg">Sebelum anda memulai lab, silahkan buka terminal pada perangkat masing-masing dan anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
                                     <p>Jika sudah, anda bisa memulai lab dengan mengetikan perintah</p>
                                     <p class="bg-danger-subtle"><code class="text-dark">lab start apache</code></p>
                                 </div>
@@ -186,7 +203,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
-                            Lab
+                            🔏Lab
                         </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
@@ -197,21 +214,29 @@
                                 <div class="header p-1 bg-danger bg-opacity-10 border border-danger border-start-0 rounded-end">
                                     <p class="fw-bold">Solve The Apache!</p>
                                     <p>Pada latihan ini anda tidak akan diberikan panduan khusus, jadi selesaikan masalah yang ada pada Apache.</p>
+                                    <p>Silahkan download terlebih dahulu <strong class="fw-bold">Lembar Kerja Peserta Didik (LKPD)</strong> pada link di bawah ini!</p>
+                                    <div class="pb-3">
+                                        <a href="https://docs.google.com/document/d/1NQIi6k-qTXJA_rt1CgEcbkRI3vG_IL_Z/edit?usp=sharing&ouid=101265254483052732312&rtpof=true&sd=true" class="btn btn-outline-danger _blank">LKPD</a>
+                                    </div>
                                     <h4 class="fw-bold">OUTPUT</h4>
-                                    <p>Terdapat 5 permasalahan pada Apache, anda harus menyelesaikannya dan memastikan Apache dapat menampilkan hasilnya.</p>
+                                    <p>Bantu Daniel menampilkan hasil website yang sudah ada di Apache!</p>
                                     <h4 class="fw-bold">Prepare the Lab</h4>
-                                    <p class="lh-lg">Sebelum anda memulai lab, anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p class="lh-lg">Sebelum anda memulai lab, silahkan buka terminal pada perangkat masing-masing dan anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p>Pertama masuk ke dalam mode <strong>root</strong></p>
+                                    <p class="bg-danger-subtle">
+                                        <code class="text-dark">user@server:~$ sudo su <br>
+                                        [sudo] password for user:</code>
+                                    </p>
                                     <p>Jika sudah, anda bisa memulai lab dengan mengetikan perintah</p>
                                     <p class="bg-danger-subtle"><code class="text-dark">lab start solveApache</code></p>
                                 </div>
                                 <div class="instructions pt-2">
-                                    <h5 class="fw-bold pb-3 pt-2">Clue</h5>
-                                    <p>1. Masuk ke dalam mode <strong>root</strong></p>
-                                    <p class="pt-2">2. Terdapat file index.html di dalam direktori <strong>/var/www/html/lab</strong> </p>
-                                    <p class="pt-2">3. Terdapat file VirtualHost dengan nama <strong>lab.conf</strong></p>
-                                    <p class="pt-2">4. Terdapat domain dengan nama <strong>lab.com</strong></p>
-                                    <p class="pt-2">5. File VirtualHost tersebut harus aktif dan sudah sesuai isinya seperti, server name, document root, hak akses, dan lain-lain.</p>
-                                    <p class="pt-2">6. Pastikan port listen sudah sesuai dengan yang ada pada file VirtualHost</p>
+                                    <h5 class="fw-bold pb-3 pt-2">Description</h5>
+                                    <p>Halo! Perkenalkan saya Daniel yang merupakan seorang system administrator di sebuah perusahaan di negara Konoha. Saya memiliki permasalahan ketika melakukan konfigurasi Apache pada server yang saya miliki. Perusahaan meminta saya untuk membuat sebuah website namun ternyata website tersebut mengalami error. Tampilan website tersebut menjadi seperti di bawah ini.</p>
+                                    <img src="./assets/images/website.png" class="image text-center ratio ratio-16x9" width="550" height="500"/>
+                                    <p class="pt-2">Dan ketika saya cek pada server dengan command <code>curl</code>, menampilkan hasil seperti ini</p>
+                                    <img src="./assets/images/server.png" class="image text-center ratio ratio-16x9" />
+                                    <p class="pt-2">Bantu saya untuk menyelesaikan masalah ini🙌</p>
                                 <div class="evaluation pt-2">
                                     <h5 class="fw-bold">Evaluation</h5>
                                     <p class="pt-2">Jika konfigurasi sudah selesai dilakukan, silahkan cek hasil pengerjaan dengan perintah di bawah ini. Jika dirasa belum cukup, anda dapat melanjutkan pengerjaan sampai hasilnya sudah benar</p>
@@ -224,7 +249,11 @@
                                     <p class="pt-2">Lakukan perintah berikut untuk menyelesaikan proses praktikum. Gunakan user <strong>root</strong> untuk melakukan perintah.</p>
                                     <p class="bg-danger-subtle">
                                         <code class="text-dark">root@server:~# lab finish solveApache</code>
-                                    </p>    
+                                    </p>
+                                    <p>Jika sudah menyelesaikan, silahkan upload LKPD pada link berikut!</p>
+                                    <div class="pb-3">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMCTPqXXi9NItcmj-XPpaEj3YQmmRwF3VWUVoorWSZpcbP9Q/viewform?usp=dialog" class="btn btn-outline-danger _blank">Upload LKPD</a>
+                                    </div>    
                                 </div>
                             </div>
                         </div>    
@@ -234,7 +263,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            Formulir Refleksi Aktivitas
+                            📖Formulir Refleksi Aktivitas
                         </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
@@ -251,12 +280,12 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-danger text-white fw-bold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            Post-Test
+                            🌟Post-Test
                         </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse p-2" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Post-test ini bertujuan untuk mengetahui peningkatan pemahamanmu setelah mengikuti semua materi dan aktivitas dalam pembelajaran ini. Soal-soalnya dirancang untuk mencerminkan apa yang sudah kamu pelajari, sehingga kamu bisa menilai seberapa jauh kamu telah berkembang dalam memahami konsep atau praktik dari DNS Server & Web Server.
+                                Post-test ini bertujuan untuk mengetahui peningkatan pemahamanmu setelah mengikuti semua materi dan aktivitas dalam pembelajaran ini. Soal-soalnya dirancang untuk mencerminkan apa yang sudah kamu pelajari, sehingga kamu bisa menilai seberapa jauh kamu telah berkembang dalam memahami konsep atau praktik dari Web Server.🌟
                             </div>
                             <div class="p-3">
                                 <a href="" class="btn btn-outline-danger _blank">Link Post-Test</a>
