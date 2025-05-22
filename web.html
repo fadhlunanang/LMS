@@ -198,41 +198,49 @@
                                     <p>Membuat Apache sukses menampilkan website secara lokal</p>
                                     <h4 class="fw-bold">Prepare the Lab</h4>
                                     <p class="lh-lg">Sebelum anda memulai lab, silahkan buka terminal pada perangkat masing-masing dan anda dapat meminta akses ke guru anda. Akses akan berupa <code>ssh -p [port] user@ipaddress</code></p> <br>
+                                    <p>Pertama masuk ke dalam mode <strong>root</strong></p>
+                                    <p class="bg-primary-subtle">
+                                        <code class="text-dark">user@server:~$ sudo su <br>
+                                        [sudo] password for user:</code>
+                                    </p>
                                     <p>Jika sudah, anda bisa memulai lab dengan mengetikan perintah</p>
                                     <p class="bg-primary-subtle"><code class="text-dark">lab start apache</code></p>
                                 </div>
                                 <div class="instructions pt-2">
                                     <h5 class="fw-bold">Instructions</h5>
-                                    <p>1. Masuk ke dalam mode <strong>root</strong></p>
-                                    <p class="bg-primary-subtle">
-                                        <code class="text-dark">user@server:~$ sudo su <br>
-                                        [sudo] password for user:</code>
-                                    </p>
-                                    <p class="pt-2">2. Install paket Apache</p>
+                                    <p class="pt-2">1. Install paket Apache</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# apt-get install apache2 -y</code>
                                     </p>
-                                    <p class="pt-2">3. Hidupkan paket apache yang sudah terinstall. (Pada dasarnya apache langsung aktif ketika diinstall) </p>
+                                    <p class="pt-2">2. Hidupkan paket apache yang sudah terinstall. (Pada dasarnya apache langsung aktif ketika diinstall) </p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# systemctl enable apache2</code>
                                     </p>
-                                    <p class="pt-2">4. Buat direktori baru dalam /var/www/html untuk menyimpan file html custom.</p>
+                                    <p class="pt-2">3. Buat direktori baru dalam /var/www/html untuk menyimpan file html custom.</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# mkdir /var/www/html/web-me</code>
                                     </p>
-                                    <p class="pt-2">5. Buat file html baru di dalam direktori yang sudah dibuat yakni /var/www/html/web-me/.</p>
+                                    <p class="pt-2">4. Buat file html baru di dalam direktori yang sudah dibuat yakni /var/www/html/web-me/.</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# touch /var/www/html/web-me/index.html</code>
                                     </p>
-                                    <p class="pt-2">6. Isi file tersebut dengan <strong><h1\>Selamat datang di website</.h1></strong></p>
+                                    <p class="pt-2">5. Isi file tersebut dengan <strong><h1\>Selamat datang di website</.h1></strong></p>
                                     <p class="bg-primary-subtle">
-                                        <code class="text-dark">root@server:~# echo "&lt;h1&gt;Selamat datang di website&lt;/h1&gt;" > /var/www/html/web-me</code>
+                                        <code class="text-dark">root@server:~# echo "&lt;h1&gt;Selamat datang di website&lt;/h1&gt;" > /var/www/html/web-me/index.html</code>
                                     </p>
-                                    <p class="pt-2">7. Pindah ke dalam direktori konfigurasi apache yang didalamnya terdapat file virtualhost</p>
+                                    <p class="pt-2">6. Selanjutnya, buat custom tampilan error jika page pada sebuah website tidak ditemukan.</p>
+                                    <p class="bg-primary-subtle">
+                                        <code class="text-dark">root@server:~# touch /var/www/html/web-me/error.html</code>
+                                    </p>
+                                    <p class="pt-2">7. Isi file custom error tersebut dengan <strong><h1\>Ooops, page not found</.h1></strong></p>
+                                    <p class="bg-primary-subtle">
+                                        <code class="text-dark">root@server:~# echo "&lt;h1&gt;Ooops, page not found&lt;/h1&gt;" > /var/www/html/web-me/error.html</code>
+                                    </p>
+                                    <p class="pt-2">8. Pindah ke dalam direktori konfigurasi apache yang didalamnya terdapat file virtualhost</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# cd /etc/apache2/sites-available</code>
                                     </p>
-                                    <p class="pt-2">8. Buat file virtualhost baru pada direktori tersebut yang diberi nama <strong>web-me.conf</strong>. Masuk ke dalam file tersebut dengan perintah <strong>nano web-me.conf</strong></p>
+                                    <p class="pt-2">9. Buat file virtualhost baru pada direktori tersebut yang diberi nama <strong>web-me.conf</strong>. Masuk ke dalam file tersebut dengan perintah <strong>nano web-me.conf</strong></p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">
                                             &lt;VirtualHost *:80> <br>
@@ -244,18 +252,21 @@
                                             <span class="px-5"></span>Options Indexes FollowSymLinks <br>
                                             <span class="px-5"></span>Require all granted <br>        
                                             <span class="px-5"></span>AllowOverride None <br>
+                                            <span class="px-5"></span>ErrorDocument 404 /error.html <br>
                                             <span class="px-5">&lt;/Directory></span> <br>
+                                            <span class="px-5">ErrorLog ${APACHE_LOG_DIR}/error.log</span> <br> 
+                                            <span class="px-5">CustomLog ${APACHE_LOG_DIR}/access.log combined</span> <br>
                                             &lt;/VirtualHost></code>
                                     </p>
-                                    <p class="pt-2">9. Kita bisa menghidupkan hasil dari file virtualhost yang sudah kita buat dengan perintah</p>
+                                    <p class="pt-2">10. Kita bisa menghidupkan hasil dari file virtualhost yang sudah kita buat dengan perintah</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# a2ensite web-me.conf</code>
                                     </p>
-                                    <p class="pt-2">10. Matikan file virtualhost default yang ada pada direktori sites-enabled</p>
+                                    <p class="pt-2">11. Matikan file virtualhost default yang ada pada direktori sites-enabled</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# a2dissite 000-default.conf</code>
                                     </p>
-                                    <p class="pt-2">11. Restart paket apache</p>
+                                    <p class="pt-2">12. Restart paket apache</p>
                                     <p class="bg-primary-subtle">
                                         <code class="text-dark">root@server:~# systemctl restart apache2</code>
                                     </p>
