@@ -5,7 +5,7 @@ section {
 
 /*landing page */
 .hero-section {
-    background: linear-gradient(to right, rgba(42, 73, 177, 0.7), rgba(244, 244, 244, 0.7)), url('my-web/assets/images/vecteezy_3d-illustration-dot-blue-wave-light-screen-gradient_4440262.jpg');
+    background: linear-gradient(to right, rgba(42, 73, 177, 0.7), rgba(244, 244, 244, 0.7)), url('../../assets/images/vecteezy_3d-illustration-dot-blue-wave-light-screen-gradient_4440262.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
